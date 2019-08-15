@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" type="text/css">
+<style>
+  	
+</style>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function MM_DW_effectHighlight(obj,method,effect,color,speed)
+{
+    obj[method](effect, {color:color}, speed);
+}
+function MM_DW_effectBounce(obj,method,effect,direction,distance,mode,times,speed)
+{
+    obj[method](effect, { direction:direction,distance:distance,mode:mode,times:times}, speed);
+}
+function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
+{
+    obj[method](effect, {direction:direction,distance:distance,times:times}, speed);
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('Assets/desktop.jpg')">
+<header id="top"><h1>Simple Web Solutions</h1></header><hr>
+<nav> | <a href="index.html">Home</a> | <a href="services.html">Services</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a> |</nav>
+
+<main>
+  <article>
+  	<h2>Services</h2>
+  	<section>
+  	  <h4>The modern web</h4>
+  	  <p>
+  	  	The web is a crucial place for marketing your business. It allows you to reach a broader audience more directly.<br>
+  	  	Through modern day targeted advertising, your brand can be advertised to your audience in a clear and concise manner.<br>
+  	  	This allows you to draw people towards your business with a greater ease than fighting for ad-space in the local paper,<br>
+  	  	or on billboards scattered across town. Not only does this make your business more discoverable, it allows potential<br>
+  	  	clients to navigate directly to your site.<br>
+  	  </p>
+	</section>
+ 	  
+  	<section>  
+  	  <h4 onClick="MM_DW_effectShake($(this),'effect','shake','left',15,3,1500)">What does this mean for you?</h4>
+  	  <p>
+  	  	Simply put, potential clients can quickly and easily discover your brand, find your website, and learn what you do; and what you stand for<br>
+  	  	They can browse products, review your services, get free estimates, and even order your products through your website, hassle free.<br>
+  	  	The tools that are available on the web can help your business to grow; and help you to extend your outreach.<br>
+  	  	My goal is to provide you a mobile friendly website, so that you can help your business to grow; and target your audience no matter how they browse the web.
+  	  </p>
+  	</section>
+  	
+  	<section>
+  		<h4>Pricing</h4>
+  		<p>
+  		  Here at Simple Web Solutions, we understand that cost is an important factor in business related decisions. <br>
+  		  As a result, we offer different tiers of website options to help accommodate your budget. <br>
+  		  The packages we offer are as follows:
+  		</p>
+  		  <table>
+  		  	<tr>
+  		  	  <th>Packages</th>
+  		  	  <th>Prices</th>
+  		  	</tr>
+  		  	<tr>
+  		  	  <td class="left">Basic Responsive Template</td>
+  		  	  <td class="right">$44.99</td>
+  		  	</tr>
+  		  	<tr>
+  		  	  <td class="left">Custom Responsive Template</td>
+  		  	  <td class="right">$64.99</td>
+  		  	</tr>
+  		  	<tr>
+  		  	  <td class="left">Custom Responsive Layout</td>
+  		  	  <td class="right">$25/hour</td>
+  		  	</tr>
+  		  </table>
+  	</section>
+  </article>
+  <aside >
+  <a href="contact.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','Assets/desktop.jpg',1)"><img src="Assets/smartphone-e-tablet.jpg" alt="picture of mobile devices switching to a picture of a mac" width="400" height="400" id="Image2"></a> </aside>
+  <form method="post">
+  	<h4>If you are interested in a website, complete and submit this form.</h4>
+  	Email: <input type="email"><br><br>
+  	Package:<select name="packagelist">
+  	  <option value="basicT">Basic Template</option>
+  	  <option value="customT">Custom Template</option>
+  	  <option value="customL">Custom Layout</option>
+  	</select><br><br>
+  	<input type="submit" class="btn"><input type="reset" class="btn">
+  </form><br>
+  <a href="#top">Back to top</a>
+</main>
+
+<footer>
+<span><a href="about.html">About</a> - <a href="contact.html">Contact</a></span>
+<span class="updated">Last updated: <!-- #BeginDate format:Am1a -->May 11, 2017 4:26 AM<!-- #EndDate --></span>
+</footer>
+</body>
+</html>

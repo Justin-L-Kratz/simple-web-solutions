@@ -1,0 +1,136 @@
+/* CSS Document */
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	
+}
+
+nav{
+	background: #000;
+	color: #FFF;
+}
+
+a{
+	text-decoration: none;
+	color: #0000BB;
+}
+
+main{
+	position: relative;
+	right: 0;
+	left: 0;
+	display: block;
+	margin: 0 auto 20px auto;
+	width: 80%;	
+	height: auto;
+	overflow: auto;
+}
+
+article{
+	display: inline-block;
+	width: 45%;
+}
+
+aside{
+	display: inline-block;
+	float: right;
+}
+
+img{
+	position: relative;
+	margin: auto;
+	height: 100%;
+	width: 100%;
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	/*left: 0;*/
+	width: 100%;
+	height: auto;
+	border-top: solid 1px #000;
+	background: #000;
+	color: #FFF;
+}
+
+nav a, footer a{
+	margin: 3px 5px;
+    color: #FFF;
+}
+
+.updated{
+	float: right;
+}
+h1, h2, h4, a {
+	font-family: "lateef", "Times New Roman";
+}
+
+p {
+	font-family: "inconsolata", "Arial";
+}
+
+.right{
+	text-align: right;
+}
+
+.left{
+	text-align: left;
+}
+td, th {
+	border: 1px solid black;
+}
+
+td{
+	padding: 5px;
+}
+
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+form {
+	font-weight: bold;
+	clear: both;
+}
+.btn {
+	margin: 5px;
+}
+
+
+@media screen and (max-width: 768px){
+	aside{
+		float: right;
+	}
+}
+
+
+@media screen and (max-width:425px){
+	main{
+		margin-bottom: 40px;
+	}
+	
+	article{
+		
+		width: 100%;
+	}
+	
+	footer span{
+		display: inline;
+		width: 100%;
+	}
+}
+
+
+nav a {
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+}nav a:hover {
+	color: #000000;
+	background-color: #FFFFFF;
+}
